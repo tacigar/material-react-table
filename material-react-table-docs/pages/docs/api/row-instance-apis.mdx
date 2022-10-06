@@ -48,6 +48,7 @@ return (
   <MaterialReactTable
     columns={columns}
     data={data}
+    enableExpanding
     //or a row instance in callback props like this
     muiSelectCheckboxProps={({ row }) => ({
       disabled: row.original.isAccountActive === false,

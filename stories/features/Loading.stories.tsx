@@ -62,6 +62,7 @@ export const LoadingWithDetailPanelExample: Story<
   <MaterialReactTable
     columns={columns}
     data={[]}
+    enableExpanding
     state={{ isLoading: true }}
     renderDetailPanel={({ row }) => (
       <div style={{ display: 'grid' }}>

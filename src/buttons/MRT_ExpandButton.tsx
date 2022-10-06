@@ -15,7 +15,6 @@ export const MRT_ExpandButton: FC<Props> = ({ row, table }) => {
       icons: { ExpandMoreIcon },
       localization,
       muiExpandButtonProps,
-      renderDetailPanel,
     },
   } = table;
   const { density } = getState();
@@ -41,7 +40,7 @@ export const MRT_ExpandButton: FC<Props> = ({ row, table }) => {
       <span>
         <IconButton
           aria-label={localization.expand}
-          disabled={!row.getCanExpand() && !renderDetailPanel}
+          disabled={!row.getCanExpand()}
           {...iconButtonProps}
           onClick={handleToggleExpand}
           sx={(theme) => ({
@@ -56,11 +55,7 @@ export const MRT_ExpandButton: FC<Props> = ({ row, table }) => {
           <ExpandMoreIcon
             style={{
               transform: `rotate(${
-                !row.getCanExpand() && !renderDetailPanel
-                  ? -90
-                  : row.getIsExpanded()
-                  ? -180
-                  : 0
+                !row.getCanExpand() ? -90 : row.getIsExpanded() ? -180 : 0
               }deg)`,
               transition: 'transform 150ms',
             }}

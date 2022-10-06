@@ -69,6 +69,7 @@ export const CustomizeDisplayColumns: Story<MaterialReactTableProps> = () => (
     }}
     enableColumnOrdering
     enableColumnResizing
+    enableExpanding
     enableRowNumbers
     enableRowSelection
     enableRowActions

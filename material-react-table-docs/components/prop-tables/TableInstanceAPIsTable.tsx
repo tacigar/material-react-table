@@ -110,6 +110,7 @@ const TableInstanceAPIsTable: FC<Props> = ({ onlyProps }) => {
       }}
       enableColumnActions={!onlyProps}
       enableColumnFilterModes
+      enableExpanding
       enablePagination={false}
       enablePinning
       enableRowNumbers

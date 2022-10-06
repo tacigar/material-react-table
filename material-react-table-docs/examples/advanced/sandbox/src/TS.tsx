@@ -154,6 +154,7 @@ const Example: FC = () => {
       data={data}
       enableColumnFilterModes
       enableColumnOrdering
+      enableExpanding
       enableGrouping
       enablePinning
       enableRowActions

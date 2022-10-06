@@ -32,6 +32,7 @@ const Example: FC = () => {
     <MaterialReactTable
       columns={columns}
       data={data}
+      enableExpanding
       renderDetailPanel={({ row }) => (
         <Box
           sx={{

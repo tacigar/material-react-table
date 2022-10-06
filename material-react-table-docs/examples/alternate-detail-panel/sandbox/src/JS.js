@@ -41,6 +41,7 @@ const Example = () => {
           },
         },
       }}
+      enableExpanding
       initialState={{ expanded: true }}
       renderDetailPanel={({ row }) => (
         <Box

@@ -31,6 +31,7 @@ const Example = () => {
     <MaterialReactTable
       columns={columns}
       data={data}
+      enableExpanding
       renderDetailPanel={({ row }) => (
         <Box
           sx={{

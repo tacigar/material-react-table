@@ -41,6 +41,7 @@ const Example: FC = () => {
           },
         },
       }}
+      enableExpanding
       initialState={{ expanded: true }}
       renderDetailPanel={({ row }) => (
         <Box

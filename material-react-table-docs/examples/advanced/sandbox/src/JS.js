@@ -142,6 +142,7 @@ const Example = () => {
       data={data}
       enableColumnFilterModes
       enableColumnOrdering
+      enableExpanding
       enableGrouping
       enablePinning
       enableRowActions

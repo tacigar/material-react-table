@@ -48,6 +48,7 @@ export const Example = () => {
       enableColumnOrdering
       enableDensityToggle={false} //density toggle is not compatible with memoization
       enableEditing
+      enableExpanding
       enablePinning
       enableRowSelection
       enableStickyHeader
